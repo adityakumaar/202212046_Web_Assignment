@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: green;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.add-task-main{
+  font-size: 30px;
+}
+.label-text {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.input-field {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-task-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #45a049;
+}
+
+.completed-button {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Optional hover effect */
+.completed-button:hover,
+.delete-button:hover {
+  opacity: 0.8;
+}
+
+li {
+  list-style: none;
+  }
+  
+  .pendingtask {
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  }
+  
+  .completedtasks {
+  display: flex;
+  height: 35px;
+  }
+  
+  /* Additional improvements */
+  
+  ul {
+  padding-left: 0; /* Remove default padding for <ul> */
+  }
+  
+  li {
+  margin-bottom: 5px; /* Add some spacing between list items */
+  }
+  
+  .pendingtask {
+  background-color: #d18787; /* Add a background color for pending tasks */
+  border-radius: 15px; /* Add rounded corners to pending tasks */
+  padding: 10px; /* Add padding to the pending tasks */
+  font-style: normal;
+  }
+  
+  .completedtasks {
+  background-color: #92e29f; /* Add a background color for completed tasks */
+  border-radius: 15px; /* Add rounded corners to completed tasks */
+  padding: 10px; /* Add padding to the completed tasks */
+  font-style: italic;
+  }
+  
+  /* Optional hover effect for list items */
+  li:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+  }
+  
+  /* Optional transition effect for smoother animations */
+  li {
+  transition: background-color 0.3s ease;
+  }
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
